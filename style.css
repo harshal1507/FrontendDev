@@ -11,16 +11,55 @@ html,body{
 }
 
 #main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 100%;
     background-color: #dadada;
 }
 
 #center{
-    width: 80%;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(0%,-50%);
+    width: 68%;
     height: 80%;
-    background-color: red;
+}
+
+.imagecontainer{
+    overflow: hidden;
+    position: absolute;
+    width:  0%;
+    height: 100%;
+}
+
+img{
+    height: 100%;
+}
+
+#one{
+    width: 0%;
+}
+
+#two{
+    width: 0%;
+}
+
+#three{
+    width: 0%;
+}
+
+.text{
+    position: absolute;
+    bottom: 15%;
+    left: -10%;
+    overflow: hidden;
+    width: 400px;
+    height: 100px;
+    z-index: 999;
+}
+
+.text h1{
+    font-size: 5vw;
+    position: absolute;
+    top: 100px;
 }
